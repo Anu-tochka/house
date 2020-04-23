@@ -1,0 +1,130 @@
+$grey: #f7f7f7
+$color-main: #ffffff
+$color-text: #000000
+$color-bg: #503314
+
+@mixin font-main
+  font-family: Roboto Right, Helvetica, Arial, sans-serif
+  font-size: 12pt
+
+
+@mixin font-title
+  font-family: OfficinaSerifC Bold, Georgia, Times New Roman, serif
+  font-size: 12pt
+
+
+@mixin tiles
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-around
+
+
+@mixin center
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+
+body
+  @include font-main
+  background-color: $color-main
+  color: $color-text
+
+
+header
+  max-width: 261px
+  @include font-title
+  background: url(img/bg_menu.jpg) repeat-y $color-bg
+  color: $color-main
+  float: left
+  text-transform: uppercase
+  @include center
+  align-self: stretch
+
+.header
+  display: none
+  text-transform: uppercase
+  @include font-title
+
+a
+  text-decoration-line: none
+  color: inherit
+
+a:hover
+  text-decoration-line: underline  
+
+.main-top
+  @include tiles
+
+	
+.tiles
+  @include tiles
+
+	
+.center
+  @include center
+
+
+.between
+  @include tiles
+  justify-content: space-between
+
+
+.carousel-cell
+  width: 100% /* full width */
+  height: 160px /* height of carousel */
+  margin-right: 10px
+
+
+table
+  border-collapse: collapse
+  width: 40%
+  max-width: 542px
+
+
+tr:nth-child(2n-1)
+  background-color: $grey
+
+
+th
+  border-collapse: collapse
+  width: 40%
+
+
+td
+  border-collapse: collapse
+  width: 40%
+
+
+tfoot
+  background: url(/img/bg_price1.jpg) no-repeat $color-bg
+  color: $color-main
+
+
+@media screen and (min-device-width: 1200px)
+  header
+    max-width: 220px
+  
+
+@media screen and (device-width: 1024px)
+  header
+    display: none
+  
+  .header
+    position: fixed
+    background: url(img/bg_menu.jpg) no-repeat $color-bg
+    max-width: 83px
+  
+
+@media screen and (device-width: 320px)
+  header
+    display: none
+  
+  .header
+    float: none
+    background: url(img/bg_min.jpg) no-repeat $color-bg
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+  

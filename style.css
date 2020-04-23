@@ -1,0 +1,101 @@
+body {
+  font-family: Roboto Right, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  background-color: #ffffff;
+  color: #000000; }
+
+header {
+  max-width: 261px;
+  font-family: OfficinaSerifC Bold, Georgia, Times New Roman, serif;
+  font-size: 12pt;
+  background: url(img/bg_menu.jpg) repeat-y #503314;
+  color: #ffffff;
+  float: left;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch; }
+
+.header {
+  display: none;
+  text-transform: uppercase;
+  font-family: OfficinaSerifC Bold, Georgia, Times New Roman, serif;
+  font-size: 12pt; }
+
+a {
+  text-decoration-line: none;
+  color: inherit; }
+
+.main-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.tiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.between {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: space-between; }
+
+.carousel-cell {
+  width: 100%;
+  height: 160px;
+  margin-right: 10px; }
+
+table {
+  border-collapse: collapse;
+  width: 40%;
+  max-width: 542px; }
+
+tr:nth-child(2n-1) {
+  background-color: #f7f7f7; }
+
+th {
+  border-collapse: collapse;
+  width: 40%; }
+
+td {
+  border-collapse: collapse;
+  width: 40%; }
+
+tfoot {
+  background: url(/img/bg_price1.jpg) no-repeat #503314;
+  color: #ffffff; }
+
+@media screen and (min-device-width: 1200px) {
+  header {
+    max-width: 220px; } }
+@media screen and (device-width: 1024px) {
+  header {
+    display: none; }
+
+  .header {
+    position: fixed;
+    background: url(img/bg_menu.jpg) no-repeat #503314;
+    max-width: 83px; } }
+@media screen and (device-width: 320px) {
+  header {
+    display: none; }
+
+  .header {
+    float: none;
+    background: url(img/bg_min.jpg) no-repeat #503314;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; } }
+
+/*# sourceMappingURL=style.css.map */
