@@ -2,8 +2,12 @@ body {
   font-family: Roboto Right, Helvetica, Arial, sans-serif;
   font-size: 12pt;
   background-color: #ffffff;
-  color: #000000; }
+  color: #000000;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 260px 1fr 774px 1fr; }
 
+/*  grid-template-rows: auto 200px auto 100px */
 header {
   max-width: 261px;
   font-family: OfficinaSerifC Bold, Georgia, Times New Roman, serif;
@@ -26,6 +30,9 @@ header {
 a {
   text-decoration-line: none;
   color: inherit; }
+
+a:hover {
+  text-decoration-line: underline; }
 
 .main-top {
   display: flex;
